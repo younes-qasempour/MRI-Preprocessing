@@ -18,7 +18,7 @@ def explore_3D_array(arr: np.ndarray, cmap: str = 'gray'):
     def fn(SLICE):
         plt.figure(figsize=(6, 6))
         plt.imshow(arr[SLICE, :, :], cmap=cmap)
-        plt.show()
+        # plt.show()
 
     interact(fn, SLICE=(0, arr.shape[0] - 1))
 
@@ -47,7 +47,7 @@ def explore_3D_array_comparison(arr_before: np.ndarray, arr_after: np.ndarray, c
         ax2.imshow(arr_after[SLICE, :, :], cmap=cmap)
 
         plt.tight_layout()
-        plt.show()
+        # plt.show()
 
     interact(fn, SLICE=(0, arr_before.shape[0] - 1))
 
@@ -126,6 +126,6 @@ def explore_3D_array_with_mask_contour(arr: np.ndarray, mask: np.ndarray, thickn
 
         plt.figure(figsize=(7, 7))
         plt.imshow(arr_with_contours)
-        plt.show()
+        # plt.show()
 
     interact(fn, SLICE=(0, arr.shape[0] - 1))
