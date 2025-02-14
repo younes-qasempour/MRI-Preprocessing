@@ -1,0 +1,10 @@
+numpy==1.26.4
+uv
+ipykernel
+ipywidgets
+matplotlib
+opencv-python-headless
+jupyterlab
+notebook
+SimpleITK
+antspyx
